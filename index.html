@@ -111,7 +111,7 @@
         }
         .hero-bg {
             position: absolute; inset: 0;
-            background: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1800') center/cover no-repeat;
+            background: url('inicio.jpeg') center/cover no-repeat;
             filter: brightness(0.3) saturate(0.8);
             transform: scale(1.05);
             animation: heroZoom 20s ease-in-out infinite alternate;
@@ -247,8 +247,10 @@
 
         .grid-productos {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-            gap: 2px;
+            grid-template-columns: repeat(auto-fit, 270px);
+            margin: 0 auto;
+            gap: 20px;
+            justify-content: center;
         }
 
         .producto-card {
@@ -590,9 +592,9 @@
 
             <div class="producto-card">
                 <div class="foto-wrapper">
-                    <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&q=80&w=600" alt="Mezcal Ancestral" class="foto-producto">
+                    <img src="1.jpeg" alt="Mezcal Ancestral" class="foto-producto">
                     <div class="foto-overlay"></div>
-                    <span class="badge">Edición Limitada</span>
+                    <span class="badge">Nuevo</span>
                 </div>
                 <div class="info-producto">
                     <h3>Mezcal Ancestral</h3>
@@ -607,9 +609,9 @@
 
             <div class="producto-card">
                 <div class="foto-wrapper">
-                    <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&q=80&w=600" alt="Gin Botánico" class="foto-producto">
+                    <img src="2.jpeg" alt="Gin Botánico" class="foto-producto">
                     <div class="foto-overlay"></div>
-                    <span class="badge">Bestseller</span>
+                    <span class="badge">Nuevo</span>
                 </div>
                 <div class="info-producto">
                     <h3>Gin Botánico</h3>
@@ -617,37 +619,6 @@
                     <div class="card-footer">
                         <span class="precio">$38.00</span>
                         <button class="btn-comprar" onclick="irAWhatsapp('Gin Botánico - $38.00')">Pedir</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="producto-card">
-                <div class="foto-wrapper">
-                    <img src="https://images.unsplash.com/photo-1505275350441-83dcda8eeef5?auto=format&fit=crop&q=80&w=600" alt="Licor de Café" class="foto-producto">
-                    <div class="foto-overlay"></div>
-                </div>
-                <div class="info-producto">
-                    <h3>Licor de Café</h3>
-                    <p>Infusión lenta con granos de altura de Nariño y caña pura. Dulce equilibrado, final largo.</p>
-                    <div class="card-footer">
-                        <span class="precio">$29.00</span>
-                        <button class="btn-comprar" onclick="irAWhatsapp('Licor de Café - $29.00')">Pedir</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="producto-card">
-                <div class="foto-wrapper">
-                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&q=80&w=600" alt="Ron Añejo" class="foto-producto">
-                    <div class="foto-overlay"></div>
-                    <span class="badge">Nuevo</span>
-                </div>
-                <div class="info-producto">
-                    <h3>Ron Añejo Oscuro</h3>
-                    <p>Madurado 3 años en barrica de roble americano. Vainilla, tabaco, coco y una calidez envolvente.</p>
-                    <div class="card-footer">
-                        <span class="precio">$52.00</span>
-                        <button class="btn-comprar" onclick="irAWhatsapp('Ron Añejo Oscuro - $52.00')">Pedir</button>
                     </div>
                 </div>
             </div>
